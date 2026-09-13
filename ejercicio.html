@@ -35,6 +35,33 @@
                          <label for="cantidadObras">
                             Cantidad de obras:
                         </label>
-                        <input type="number" id="cantidadObras" min="1">
-                        <button type="button" id="btnComenzar">Comenzar</button>
+                        <input type="number" id="cantidadObras">
+                        <button type="button" id="btnComenzar">
+                            Comenzar
+                        </button>
                     </form>
+                </section>
+
+                    <!-- CARGA DE OBRAS -->
+                <section id="seccionObras" hidden>
+                    <h3>Cargar obra</h3>
+                     <p id="numeroObra"></p>
+                     <form id="formObra">
+                        <label for="nombreObra">
+                            Nombre de la obra:
+                        </label>
+                        <input type="text" id="nombreObra">
+                        <label for="duracionObra">
+                            Duración en minutos:
+                        </label>
+                        <input type="number" id="duracionObra">
+                        <label for="pesoObra">
+                            Peso del archivo en MB:
+                        </label>
+                        <input type="number" id="pesoObra">
+                        <button type="button" id="btnGuardarObra">
+                            Guardar obra
+                         </button>
+                     </form>
+                </section>
+                  
