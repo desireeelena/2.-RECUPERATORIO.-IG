@@ -74,6 +74,10 @@ body{
     margin-bottom: 1rem;
 }
 
+.columnas article#tec{
+    flex: 0.5;
+}
+
 /* Titulos */
 h1, h2, h3{
     margin-top: 1.5rem;
@@ -109,6 +113,12 @@ img{
     width: 30%;
     margin: 1%;
     display: inline-block;
+}
+/* Dato curiosos */
+.curiosidades{
+    background-color: #ce74d69f;
+    padding: 1.5rem;
+    margin-top: 2rem;
 }
 
 footer{
