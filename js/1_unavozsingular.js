@@ -1,4 +1,4 @@
-// Obras de Laurie Anderson
+// Galeria de obras de Laurie Anderson
 const obras = [
     {
         archivo: "img/heartofadog.jpg",
@@ -27,4 +27,31 @@ const obras = [
     }
 ];
 
+// Seleccion de los elementos del HTML
+const obra = document.querySelector(".obra");
+const botonSiguiente = document.querySelector(".siguiente-obra");
+
+// Muestra la primera obra
+let numero = 0;
+
+function mostrarObra() {
+    obra.innerHTML = `
+        <img src="${obras[numero].archivo}" alt="${obras[numero].nombre}">
+        <h3>${obras[numero].nombre}</h3>
+        <p>Año: ${obras[numero].anio}</p>
+    `;
+}
+
+mostrarObra();
+
+// Cambia a la siguiente obra
+botonSiguiente.addEventListener("click", function() {
+    numero++;
+
+    if (numero >= obras.length) {
+        numero = 0; // Vuelve a la primera obra si se llega al final
+    }
+
+    mostrarObra();
+});
 
