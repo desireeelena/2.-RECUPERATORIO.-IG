@@ -64,4 +64,43 @@
                          </button>
                      </form>
                 </section>
-                  
+
+                  <!-- DATOS DEL REPOSITORIO -->
+
+                <section id="seccionRepositorio" hidden>
+                    <h3>Datos del repositorio</h3>
+                    <form id="formRepositorio">
+                        <label for="transferencia">
+                            Tiempo de transferencia por MB en milisegundos:
+                        </label>
+                        <input type="number" id="transferencia">
+                        
+                        <label for="costo">
+                            Costo mensual de almacenamiento por MB:
+                        </label>
+                        <input type="number" id="costo">
+                        
+                        <button type="button" id="btnCalcular">
+                            Calcular resultados
+                        </button>
+                    </form>
+                </section>
+                
+                <!-- RESULTADOS -->
+                 <section id="resultados" hidden>
+                    <h3>Resultados</h3>
+                    <p id="duracionTotal"></p>
+                    <p id="duracionPromedio"></p>
+                    <p id="obraMayor"></p>
+                    <p id="transferenciaMayor"></p>
+                    <p id="presupuesto"></p>
+
+                    <button type="button" id="btnReiniciar">
+                        Reiniciar
+                     </button>
+                </section>
+            </main>
+            <script src="js/3_ejercicio.js"></script>
+        </div>
+    </body>
+</html>
